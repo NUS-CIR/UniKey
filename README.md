@@ -9,9 +9,9 @@ We are currently still in the process of releasing the code UniKey, which will t
 
 
 ## Overview
-UniKey proposes that coarse grained temporal features (i.e., inter-keystroke-timings) and coarse grained spatial features (i.e., which hand was responsible for the keystroke) can be combined to infer the word being typed on a surface using a commodity smartwatch. 
+UniKey uses coarse grained temporal features (i.e., inter-keystroke-timings) and coarse grained spatial features (i.e., which hand was responsible for the keystroke) to infer the word being typed on a surface using a commodity smartwatch. Unkey starts
 
-Briefly, UniKey works by learning a user's typing patterns through a classifier that is trained on the inter-keystroke timings (IKT) and approximate location of the keystroke (left or right hand) from a regular keyboard. This classifier is then applied to actual IKTs and L-R data collected from a smartwatch worn on the user's wrist while they type on a surface. The classifier predicts the word being typed based on the learned patterns. These predictions will be refined by a language model to improve accuracy and handle ambiguities.
+Briefly, UniKey works by learning a user's typing patterns through a classifier that is trained on the inter-keystroke timings (IKT) and approximate location of the keystroke (left or right hand) from a regular keyboard. This classifier is then applied to actual IKTs and L-R data collected from a smartwatch worn on the user's wrist while they type on a surface, where it leverages the learned patterns to predict the word being typed. The classifier's results are then refined using a language model (LLM) to improve accuracy and handle ambiguities in the predictions, before being presented to the user.
 
 
 ## Citation
